@@ -11,5 +11,5 @@ threshold = 500  # Gas detection threshold; adjust based on sensor calibration
 while True:
   gas_value = adc.read_u16()  # Read analog value from the gas sensor
   if gas_value > threshold:
-      uart.write('ALERT\n')  # Send an alert signal to the laptop
+    uart.write('ALERT\n')  # Send an alert signal to the laptop
   utime.sleep(0.5)  # Wait for 0.5 seconds before the next reading
