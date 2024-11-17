@@ -13,4 +13,4 @@ while True:
   if pico_serial.in_waiting > 0:
     data = pico_serial.readline().decode('utf-8').strip()
     if data == 'ALERT':
-      playsound('alert_sound.mp3')  # Play the alert sound file
+      playsound('/sound/siren.m4a')  # Play the alert sound file
